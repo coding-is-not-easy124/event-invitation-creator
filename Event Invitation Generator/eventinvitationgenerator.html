@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Event Invitation Creator</title>
+  <link rel="stylesheet" href="eventinvitationgenerator.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1 id="form-heading">Create an Event Invite</h1>
+    <div id="message" class="hidden">
+      <span id="msg-text"></span>
+      <button id="close-btn">&times;</button>
+    </div>
+
+    <form id="event-form">
+      <input type="text" id="eventName" placeholder="Event name" />
+      <input type="date" id="eventDate" />
+      <input type="time" id="startTime" placeholder="Start time" />
+      <input type="time" id="endTime" placeholder="End time" />
+      <textarea id="eventDescription" placeholder="Event Description"></textarea>
+      <input type="text" id="location" placeholder="Location" />
+      <button type="submit" id="submitBtn">Create Event</button>
+    </form>
+  </div>
+
+  <div class="invite-section" id="inviteSection"></div>
+
+  <script src="eventinvitationgenerator.js"></script>
+</body>
+</html>
